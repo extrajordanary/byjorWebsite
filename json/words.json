@@ -1,0 +1,28 @@
+var words =
+{
+	"adjectives" : [
+		"cool",
+		"neat",
+		"awesome"
+	],
+	"things" : [
+		"things",
+		"stuff",
+		"projects",
+		"apps"
+	],
+	"groups" : [
+		"collection",
+		"bunch",
+		"pile",
+		"cluster"
+	],
+	"actions" : [
+		"makes",
+		"creates",
+		"codes",
+		"draws",
+		"doodles",
+		"does"
+	]
+}
