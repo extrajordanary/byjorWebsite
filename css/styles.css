@@ -448,7 +448,7 @@ color: #FDFDFD !important;
 }
 /*Skills*/
 .skilltitle {
-text-align: right;
+text-align: left;
 font-weight: 600;
 padding-right: 0px;
 }
@@ -456,6 +456,7 @@ padding-right: 0px;
 border-radius: 0px;
 height: 15px;
 margin-top: 5px;
+margin-left: 20px;
 background-color: #D6D6D6;
 }
 .progress .progress-bar {
