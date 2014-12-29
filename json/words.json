@@ -3,19 +3,31 @@ var words =
 	"adjectives" : [
 		"cool",
 		"neat",
-		"awesome"
+		"awesome",
+		"amazing",
+		"nifty",
+		"rad"
 	],
 	"things" : [
 		"things",
 		"stuff",
 		"projects",
-		"apps"
+		"apps",
+		"doohickies",
+		"programs",
+		"art",
+		"designs"
 	],
 	"groups" : [
 		"collection",
 		"bunch",
 		"pile",
-		"cluster"
+		"cluster",
+		"heap",
+		"posse",
+		"bundle",
+		"ton",
+		"lot"
 	],
 	"actions" : [
 		"makes",
@@ -23,6 +35,9 @@ var words =
 		"codes",
 		"draws",
 		"doodles",
-		"does"
+		"does",
+		"sketches",
+		"magics",
+		"invents"
 	]
 }
