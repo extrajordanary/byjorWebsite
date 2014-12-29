@@ -30,14 +30,14 @@ var words =
 		"lot"
 	],
 	"actions" : [
-		"makes",
-		"creates",
-		"codes",
-		"draws",
-		"doodles",
-		"does",
-		"sketches",
-		"magics",
-		"invents"
+		"make",
+		"create",
+		"code",
+		"draw",
+		"doodle",
+		"do",
+		"sketch",
+		"magic",
+		"invent"
 	]
 }
