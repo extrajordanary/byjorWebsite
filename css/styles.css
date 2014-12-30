@@ -491,7 +491,7 @@ background-color: #CC4646;
   font-size: 1.2em;
   text-align: center;
   position: absolute;
-  top: 20px;
+  top: calc(100% - 25px);
   left: 50%;
   margin-left: -25px;
   background-color: #CC4646;
@@ -504,6 +504,15 @@ background-color: #CC4646;
 #timeline .timeline-badge span.timeline-balloon-date-day {
   font-size: 1.4em;
 }
+
+#timeline .timeline-badge span.timeline-balloon-date-present {
+position: relative;
+top: 15%;
+/*transform: translateY(-50%);*/
+font-size: 1.4em;
+/*text-align: left;*/
+}
+
 #timeline .timeline-badge span.timeline-balloon-date-month {
   font-size: 13px;
 position: relative;
