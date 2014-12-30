@@ -563,8 +563,10 @@ display: inherit;
   margin: 0;
 }
 
-#timeline .timeline-movement .timeline-item .timeline-panel .timeline-panel-ul .img-responsive {
-  max-width: 50%;
+.portfolio-image {
+  max-width: 49%;
+  vertical-align: middle;
+  display: inline-block;
 }
 
 #timeline .timeline-movement .timeline-item .timeline-panel.place .timeline-panel-ul {
