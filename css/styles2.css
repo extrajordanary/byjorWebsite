@@ -208,7 +208,7 @@ a:hover {
 
 .logo {
   color: #32CC5E;
-  font-family: 'Slackey', cursive;
+  font-family: 'Slackey', sans-serif;
   font-size: 1.6em;
   text-shadow: none;
   margin: 8px 0 0 0;
@@ -216,7 +216,7 @@ a:hover {
 
 .logo span.color2 {
   color: #FFF;
-  font-family: 'Slackey', cursive; }
+  font-family: 'Slackey', sans-serif; }
 
 .logo:hover {
   color: #DF3927; }
@@ -467,32 +467,32 @@ margin: 0px;
   top: -6px;
   display: inherit; }
 
-#timeline .timeline-badge.timeline-filter-movement {
-  background-color: #FFF;
+/*#timeline .timeline-badge.timeline-filter-movement {
+  background-color: $white-color;
   font-size: 1.7em;
   height: 35px;
   margin-left: -18px;
   width: 35px;
-  top: 40px; }
-
+  top: 40px;
+}
 #timeline .timeline-badge.timeline-filter-movement a span {
-  color: #127F32;
-  font-size: 1.3em;
-  top: -1px; }
-
+  color: $main-color;
+  font-size: 1.0em;
+  top: -1px;
+}*/
 #timeline .timeline-badge.timeline-future-movement {
   background-color: #FFF;
   height: 35px;
   width: 35px;
-  font-size: 1.7em;
-  top: -16px;
-  margin-left: -18px; }
+  font-size: 1.4em;
+  top: -10px;
+  margin-left: -19px; }
 
 #timeline .timeline-badge.timeline-future-movement a span {
   color: #127F32;
   font-size: .9em;
   top: 2px;
-  left: 1px; }
+  left: 2px; }
 
 #timeline .timeline-movement {
   border-bottom: dashed 1px #127F32;
