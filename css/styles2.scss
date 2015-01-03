@@ -24,7 +24,8 @@ $social-link-hover-color:$contrast-color;
 $link-hover-color: #DF3927; /*salmon*/
 $btn-hover-color: #E24040;
 $quote-color: $off-white-color;
-$progress-color: $light-gray-color;
+$progress-bar-color: $off-white-color;
+$progress-color: $main-color;
 $timeline-panel-background-color: $white-color;
 $timeline-panel-border-color: $off-white-color;
 $panel-place-color: $main-color;
@@ -499,10 +500,10 @@ border-radius: 0px;
 height: 15px;
 margin-top: 5px;
 margin-left: 20px;
-background-color: $progress-color;
+background-color: $progress-bar-color;
 }
 .progress .progress-bar {
-background-color: $main-color;
+background-color: $progress-color;
 }
 
 /*Timeline*/
@@ -548,9 +549,7 @@ background-color: $main-color;
 #timeline .timeline-badge span.timeline-balloon-date-present {
 position: relative;
 top: 15%;
-/*transform: translateY(-50%);*/
 font-size: 1.4em;
-/*text-align: left;*/
 }
 
 #timeline .timeline-badge span.timeline-balloon-date-month {
@@ -559,19 +558,6 @@ position: relative;
 top: -6px;  
 display: inherit;
 }
-/*#timeline .timeline-badge.timeline-filter-movement {
-  background-color: $white-color;
-  font-size: 1.7em;
-  height: 35px;
-  margin-left: -18px;
-  width: 35px;
-  top: 40px;
-}
-#timeline .timeline-badge.timeline-filter-movement a span {
-  color: $main-color;
-  font-size: 1.0em;
-  top: -1px;
-}*/
 #timeline .timeline-badge.timeline-future-movement {
   background-color: $white-color;
   height: 35px;
@@ -585,6 +571,13 @@ display: inherit;
   font-size: .9em;
   top: 2px;
   left: 2px;
+}
+#timeline .timeline-place-bar {
+  position: absolute;
+  width: 40px;
+  height: calc(100% - 40px);
+  top: 20px;
+  background-color: $main-color;
 }
 #timeline .timeline-movement {
   border-bottom: dashed 1px $main-color;
@@ -612,14 +605,9 @@ display: inherit;
   margin: 0;
 }
 
-.portfolio-image {
-  /*max-width: 49.5%;*/
-  /*position: absolute;*/
-  /*left: -35%;*/
-  /*max-width: 32.5%;*/
+.portfolio-images img {
   border: 1px solid $timeline-panel-border-color;
   vertical-align: middle;
-  /*display: inline-block;*/
   margin-bottom: 10px;
 }
 
@@ -1118,6 +1106,10 @@ footer {
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
 
-iframe, object, embed {
-        max-width: 100%;
+/*Random Other*/
+.rotate {
+  float: left;
+  -ms-transform: rotate(-90deg); /* IE 9 */
+  -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+  transform: rotate(-90deg);
 }
