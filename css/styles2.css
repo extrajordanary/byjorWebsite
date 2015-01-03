@@ -520,9 +520,14 @@ margin: 0px;
   margin: 0; }
 
 .portfolio-image {
-  max-width: 49%;
+  /*max-width: 49.5%;*/
+  /*position: absolute;*/
+  /*left: -35%;*/
+  /*max-width: 32.5%;*/
+  border: 1px solid #DDD;
   vertical-align: middle;
-  display: inline-block; }
+  /*display: inline-block;*/
+  margin-bottom: 10px; }
 
 #timeline .timeline-movement .timeline-item .timeline-panel.place .timeline-panel-ul {
   text-align: right; }
@@ -544,6 +549,17 @@ margin: 0px;
 #timeline .timeline-movement .timeline-item .timeline-panel.side-project .timeline-panel-ul span.panel-name {
   color: #32CC5E;
   font-size: 1.3em; }
+
+#timeline .timeline-movement .timeline-item .timeline-panel .timeline-panel-ul ul {
+  list-style: square;
+  font-size: .8em;
+  padding: 0;
+  margin: 0;
+  margin-left: 24px; }
+
+#timeline .timeline-movement .timeline-item .timeline-panel .timeline-panel-ul .col-xs-4 {
+  padding-left: 8px;
+  padding-right: 8px; }
 
 /* Portfolio */
 .isotopeWrapper article {
@@ -920,5 +936,8 @@ footer {
   -ms-user-select: none;
   user-select: none;
   -webkit-tap-highlight-color: transparent; }
+
+iframe, object, embed {
+  max-width: 100%; }
 
 /*# sourceMappingURL=styles2.css.map */
