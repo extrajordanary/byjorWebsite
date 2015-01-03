@@ -543,35 +543,6 @@ padding-right: 8px;
 top: -2px;
 font-size: 1.4em;
 }
-
-/*#timeline .timeline-badge span.timeline-balloon-date-present {
-position: relative;
-background-color: $background-color;
-padding-right: 8px;
-top: 10px;
-font-size: 1.4em;
-}
-
-#timeline .timeline-badge span.timeline-balloon-date-month {
-font-size: 1.1em;
-position: relative;
-top: -6px;  
-display: inherit;
-}*/
-/*#timeline .timeline-badge.timeline-future-movement {
-  background-color: $white-color;
-  height: 35px;
-  width: 35px;
-  font-size: 1.4em;
-  top: -10px;
-  margin-left: -19px;
-}
-#timeline .timeline-badge.timeline-future-movement a span {
-  color: $main-color;
-  font-size: .9em;
-  top: 2px;
-  left: 2px;
-}*/
 #timeline .timeline-place-bar {
   position: absolute;
   width: 50px;
@@ -635,6 +606,13 @@ display: inherit;
 #timeline .timeline-movement .timeline-item .panel-right .portfolio-images {
 float: left;
 }*/
+#timeline .timeline-movement .timeline-item .timeline-panel .see-more-link {
+  position: absolute;
+  left: 10px;
+  top: calc(100% - 30px);
+  background-color: $white-color;
+  padding: 0 6px;
+}
 #timeline .timeline-movement .timeline-item .timeline-panel .timeline-panel-ul {
   list-style: none;
   padding: 0;
@@ -643,7 +621,7 @@ float: left;
 .portfolio-images img {
   border: 1px solid $timeline-panel-border-color;
   vertical-align: middle;
-  margin-bottom: 10px;
+  /*margin-bottom: 10px;*/
 }
 
 #timeline .timeline-movement .timeline-item .timeline-panel .timeline-panel-ul li span.panel-name {
