@@ -557,7 +557,7 @@ font-size: 1.4em;
 }
 #timeline .timeline-place-name {
   text-align: right;
-  color: $off-white-color;
+  color: $white-color;
   font-size: 2.0em;
   width: 400px;
   margin: 0 0 0 0;
@@ -600,17 +600,12 @@ font-size: 1.4em;
 #timeline .timeline-movement .timeline-item .panel-right {
   text-align: right;
 }
-/*#timeline .timeline-movement .timeline-item .panel-left .portfolio-images {
-  float: right;
-}
-#timeline .timeline-movement .timeline-item .panel-right .portfolio-images {
-float: left;
-}*/
 #timeline .timeline-movement .timeline-item .timeline-panel .see-more-link {
   position: absolute;
   left: 10px;
   top: calc(100% - 30px);
-  background-color: $white-color;
+  /*background-color: $white-color;*/
+  background-color: rgba(255, 255, 255, .90);
   padding: 0 6px;
 }
 #timeline .timeline-movement .timeline-item .timeline-panel .timeline-panel-ul {
