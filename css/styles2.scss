@@ -1130,3 +1130,15 @@ footer {
   -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
   transform: rotate(-90deg);
 }
+
+.center-resume {
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  margin-top: 80px;
+}
+iframe {
+    /*width: 70%;*/
+  border-width: 1px;
+  border-color: $light-gray-color;
+}
