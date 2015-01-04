@@ -7,14 +7,14 @@ License: Free to use for personal and commercial, but you need to place back lin
 
 /*color names*/
 $color1: #1FB3B1; /*teal*/
-$color2: #23419c; /*dark blue*/
-$color3: #237e9c; /******gray blue */
+$color2: #23419c; /*******dark blue*/
+$color3: #086665; /******gray blue */
 $color4: #9C6023; /*orange*/
 
-$main-color: $color3; 
-$secondary-color: $color2; 
-$contrast-color: $color4;
-$secondary-contrast-color: $color1; 
+$main-color: $color1; 
+$secondary-color: $color3; 
+/*$contrast-color: $color4;*/
+/*$secondary-contrast-color: $color1; */
 $white-color: #FFF;
 $off-white-color: #DDD;
 $light-gray-color: #AAA;
@@ -43,8 +43,6 @@ $timeline-panel-background-color: $white-color;
 $timeline-panel-border-color: $off-white-color;
 
 $panel-place-color: $main-color;
-/*$panel-project-color: $contrast-color;*/
-/*$panel-side-project-color: $secondary-color;*/
 
 $page-section-even-color: $main-color;
 $page-section-odd-color: $secondary-color;
