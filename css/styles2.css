@@ -366,6 +366,9 @@ a:hover {
   padding: 50px 0;
   background: #FFF; }
 
+#about {
+  background: #FFF; }
+
 /*#aboutUs .txtHead{
 background:$white-color;
 padding:20px 10px;
@@ -420,22 +423,12 @@ margin: 0px;
   list-style: none;
   position: relative; }
 
-/*#timeline:before {
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  content: " ";
-  width: 2px;
-  background-color: $main-color;
-  left: 12px;
-  margin-left: -1.5px;
-}*/
 #timeline .clearFix {
   clear: both;
   height: 0; }
 
 #timeline .timeline-badge {
-  color: #127F32;
+  color: #444;
   height: 28px;
   font-size: 1.0em;
   text-align: center;
@@ -477,7 +470,7 @@ margin: 0px;
 #timeline .timeline-movement {
   padding-top: 4px;
   padding-bottom: 4px;
-  border-bottom: dashed 1px #127F32;
+  border-bottom: dashed 1px #444;
   position: relative; }
 
 #timeline .timeline-movement.timeline-movement-top {
@@ -511,7 +504,8 @@ margin: 0px;
 #timeline .timeline-movement .timeline-item .timeline-panel .see-more-link {
   position: absolute;
   left: 10px;
-  top: calc(100% - 30px);
+  /*top: calc(100% - 30px);*/
+  bottom: calc(0% + 10px);
   /*background-color: $white-color;*/
   background-color: rgba(255, 255, 255, 0.9);
   padding: 0 6px; }
@@ -524,7 +518,13 @@ margin: 0px;
 .portfolio-images img {
   border: 1px solid #DDD;
   vertical-align: middle;
-  /*margin-bottom: 10px;*/ }
+  margin-bottom: 10px;
+  margin-top: 10px; }
+
+.place-images img {
+  vertical-align: middle;
+  margin-bottom: 20px;
+  margin-top: 20px; }
 
 #timeline .timeline-movement .timeline-item .timeline-panel .timeline-panel-ul li span.panel-name {
   color: #127F32;
@@ -677,6 +677,9 @@ hr {
 body {
   margin: 0;
   font-family: Arial, sans-serif; }
+
+#resume {
+  background: #FFF; }
 
 #navigation {
   position: fixed;
@@ -931,6 +934,11 @@ footer {
   margin-right: auto;
   width: 800px;
   margin-top: 80px; }
+
+.center-video {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto; }
 
 iframe {
   /*width: 70%;*/
