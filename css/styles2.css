@@ -25,11 +25,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 ::selection {
   color: #FFF;
-  background: #21ACBC; }
+  background: #016B41; }
 
 ::-moz-selection {
   color: #FFF;
-  background: #21ACBC; }
+  background: #016B41; }
 
 p {
   color: #858585;
@@ -67,7 +67,7 @@ p {
   background: rgba(255, 255, 255, 0.35); }
 
 a {
-  color: #21ACBC;
+  color: #016B41;
   text-decoration: none;
   text-shadow: none;
   -webkit-transition: all 0.2s linear;
@@ -77,7 +77,7 @@ a {
   transition: all 0.2s linear; }
 
 a:hover {
-  color: #B86120;
+  color: #701301;
   text-decoration: none; }
 
 .btn {
@@ -85,10 +85,10 @@ a:hover {
   border-radius: 0px; }
 
 .btn:hover {
-  background: #FFC89E; }
+  background: #51B28C; }
 
 .btn-primary {
-  background: #21ACBC; }
+  background: #016B41; }
 
 .form-control {
   border-radius: 0px; }
@@ -109,7 +109,7 @@ a:hover {
   bottom: 20px;
   right: 20px;
   z-index: 5;
-  background: #21ACBC; }
+  background: #016B41; }
 
 .topHome .fa-2x {
   font-size: 20px;
@@ -121,7 +121,7 @@ a:hover {
 .header {
   position: fixed;
   width: 100%;
-  background: #21ACBC;
+  background: #016B41;
   z-index: 50;
   border-bottom-width: 1px;
   border-bottom-style: solid;
@@ -130,8 +130,8 @@ a:hover {
   top: 0px; }
 
 .navbar-inverse .navbar-toggle {
-  border-color: #21ACBC;
-  background-color: #21ACBC; }
+  border-color: #016B41;
+  background-color: #016B41; }
 
 .header .navbar {
   margin: 0;
@@ -141,16 +141,16 @@ a:hover {
   /*background-color: $main-color;*/ }
 
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-  background: #21ACBC; }
+  background: #016B41; }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-  color: #21ACBC; }
+  color: #016B41; }
 
 .navbar-inverse .navbar-toggle:hover .icon-bar {
   background: #FFF; }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: #FFC89E; }
+  color: #51B28C; }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
   color: #FFF; }
@@ -162,7 +162,7 @@ a:hover {
 /*.carousel-inner*/
 #myCarousel {
   margin-top: 50px;
-  border-bottom: 4px solid #21ACBC; }
+  border-bottom: 4px solid #016B41; }
 
 .carousel-caption {
   padding: 0px;
@@ -187,13 +187,13 @@ a:hover {
 
 .actionPanel {
   padding: 25px 0;
-  background: #21ACBC; }
+  background: #016B41; }
 
 .actionPanel h3 {
   margin: 0px; }
 
 .circle {
-  background: #21ACBC;
+  background: #016B41;
   height: 60px;
   width: 60px;
   border-radius: 35px;
@@ -208,7 +208,7 @@ a:hover {
   height: 50px; }
 
 .logo {
-  color: #FFC89E;
+  color: #51B28C;
   font-family: 'Slackey', sans-serif;
   font-size: 1.6em;
   text-shadow: none;
@@ -262,7 +262,7 @@ a:hover {
   font-weight: 200; }
 
 .page-section h2 {
-  color: #21ACBC; }
+  color: #016B41; }
 
 .page-section p {
   font-size: 1.1em;
@@ -272,7 +272,7 @@ a:hover {
   background: #2c2c2c; }
 
 .darkBg .fa {
-  color: #21ACBC; }
+  color: #016B41; }
 
 /*--- Banner ----*/
 .banner-container {
@@ -385,7 +385,7 @@ a:hover {
   background-color: #DDD; }
 
 .progress .progress-bar {
-  background-color: #21ACBC; }
+  background-color: #016B41; }
 
 /*Timeline*/
 #timeline {
@@ -420,7 +420,7 @@ a:hover {
   height: calc(100% - 48px);
   top: 24px;
   left: 0px;
-  background-color: #21ACBC;
+  background-color: #016B41;
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
   -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
@@ -496,7 +496,7 @@ a:hover {
   margin-top: 20px; }
 
 #timeline .timeline-movement .timeline-item .timeline-panel .timeline-panel-ul li span.panel-name {
-  color: #21ACBC;
+  color: #016B41;
   font-size: 1.5em;
   font-weight: 700; }
 
@@ -536,11 +536,11 @@ nav#filter li {
 nav#filter a {
   padding: 4px 12px;
   line-height: 20px;
-  border: 1px solid #21ACBC;
+  border: 1px solid #016B41;
   text-decoration: none; }
 
 .current {
-  background: #21ACBC;
+  background: #016B41;
   color: #FFF; }
 
 .portfolio-items article img {
@@ -681,10 +681,10 @@ body {
 .pageSection {
   min-height: 600px;
   padding: 20px;
-  background: #21ACBC; }
+  background: #016B41; }
 
 .pageSection:nth-child(odd) {
-  background: #FFC89E; }
+  background: #51B28C; }
 
 .socialIcons li {
   list-style: none;
@@ -698,10 +698,10 @@ footer {
 .social a {
   font-size: 32px;
   margin: 0 10px;
-  color: #21ACBC; }
+  color: #016B41; }
 
 .social a:hover {
-  color: #FFC89E; }
+  color: #51B28C; }
 
 .contact ul li {
   margin-bottom: 10px; }
