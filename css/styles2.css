@@ -5,11 +5,6 @@ Description: This theme is a pretty versatile, that places the emphasis of the h
 License: Free to use for personal and commercial, but you need to place back link in the bottom of the template.
 */
 /*color names*/
-/*teal*/
-/*******dark blue*/
-/******gray blue */
-/*orange*/
-/*$contrast-color: $color4;*/
 /*$secondary-contrast-color: $color1; */
 /*color settings*/
 @import url(http://fonts.googleapis.com/css?family=Economica:400,700|Slackey);
@@ -30,11 +25,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 ::selection {
   color: #FFF;
-  background: #1FB3B1; }
+  background: #21ACBC; }
 
 ::-moz-selection {
   color: #FFF;
-  background: #1FB3B1; }
+  background: #21ACBC; }
 
 p {
   color: #858585;
@@ -72,7 +67,7 @@ p {
   background: rgba(255, 255, 255, 0.35); }
 
 a {
-  color: #1FB3B1;
+  color: #21ACBC;
   text-decoration: none;
   text-shadow: none;
   -webkit-transition: all 0.2s linear;
@@ -82,7 +77,7 @@ a {
   transition: all 0.2s linear; }
 
 a:hover {
-  color: #086665;
+  color: #B86120;
   text-decoration: none; }
 
 .btn {
@@ -90,10 +85,10 @@ a:hover {
   border-radius: 0px; }
 
 .btn:hover {
-  background: #086665; }
+  background: #FFC89E; }
 
 .btn-primary {
-  background: #1FB3B1; }
+  background: #21ACBC; }
 
 .form-control {
   border-radius: 0px; }
@@ -114,7 +109,7 @@ a:hover {
   bottom: 20px;
   right: 20px;
   z-index: 5;
-  background: #1FB3B1; }
+  background: #21ACBC; }
 
 .topHome .fa-2x {
   font-size: 20px;
@@ -126,7 +121,7 @@ a:hover {
 .header {
   position: fixed;
   width: 100%;
-  background: #1FB3B1;
+  background: #21ACBC;
   z-index: 50;
   border-bottom-width: 1px;
   border-bottom-style: solid;
@@ -135,8 +130,8 @@ a:hover {
   top: 0px; }
 
 .navbar-inverse .navbar-toggle {
-  border-color: #1FB3B1;
-  background-color: #1FB3B1; }
+  border-color: #21ACBC;
+  background-color: #21ACBC; }
 
 .header .navbar {
   margin: 0;
@@ -146,16 +141,16 @@ a:hover {
   /*background-color: $main-color;*/ }
 
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-  background: #1FB3B1; }
+  background: #21ACBC; }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-  color: #1FB3B1; }
+  color: #21ACBC; }
 
 .navbar-inverse .navbar-toggle:hover .icon-bar {
   background: #FFF; }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: #086665; }
+  color: #FFC89E; }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
   color: #FFF; }
@@ -167,7 +162,7 @@ a:hover {
 /*.carousel-inner*/
 #myCarousel {
   margin-top: 50px;
-  border-bottom: 4px solid #1FB3B1; }
+  border-bottom: 4px solid #21ACBC; }
 
 .carousel-caption {
   padding: 0px;
@@ -192,13 +187,13 @@ a:hover {
 
 .actionPanel {
   padding: 25px 0;
-  background: #1FB3B1; }
+  background: #21ACBC; }
 
 .actionPanel h3 {
   margin: 0px; }
 
 .circle {
-  background: #1FB3B1;
+  background: #21ACBC;
   height: 60px;
   width: 60px;
   border-radius: 35px;
@@ -213,7 +208,7 @@ a:hover {
   height: 50px; }
 
 .logo {
-  color: #086665;
+  color: #FFC89E;
   font-family: 'Slackey', sans-serif;
   font-size: 1.6em;
   text-shadow: none;
@@ -267,7 +262,7 @@ a:hover {
   font-weight: 200; }
 
 .page-section h2 {
-  color: #1FB3B1; }
+  color: #21ACBC; }
 
 .page-section p {
   font-size: 1.1em;
@@ -277,7 +272,7 @@ a:hover {
   background: #2c2c2c; }
 
 .darkBg .fa {
-  color: #1FB3B1; }
+  color: #21ACBC; }
 
 /*--- Banner ----*/
 .banner-container {
@@ -390,7 +385,7 @@ a:hover {
   background-color: #DDD; }
 
 .progress .progress-bar {
-  background-color: #1FB3B1; }
+  background-color: #21ACBC; }
 
 /*Timeline*/
 #timeline {
@@ -425,7 +420,7 @@ a:hover {
   height: calc(100% - 48px);
   top: 24px;
   left: 0px;
-  background-color: #1FB3B1;
+  background-color: #21ACBC;
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
   -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
@@ -501,7 +496,7 @@ a:hover {
   margin-top: 20px; }
 
 #timeline .timeline-movement .timeline-item .timeline-panel .timeline-panel-ul li span.panel-name {
-  color: #1FB3B1;
+  color: #21ACBC;
   font-size: 1.5em;
   font-weight: 700; }
 
@@ -541,11 +536,11 @@ nav#filter li {
 nav#filter a {
   padding: 4px 12px;
   line-height: 20px;
-  border: 1px solid #1FB3B1;
+  border: 1px solid #21ACBC;
   text-decoration: none; }
 
 .current {
-  background: #1FB3B1;
+  background: #21ACBC;
   color: #FFF; }
 
 .portfolio-items article img {
@@ -686,10 +681,10 @@ body {
 .pageSection {
   min-height: 600px;
   padding: 20px;
-  background: #1FB3B1; }
+  background: #21ACBC; }
 
 .pageSection:nth-child(odd) {
-  background: #086665; }
+  background: #FFC89E; }
 
 .socialIcons li {
   list-style: none;
@@ -703,10 +698,10 @@ footer {
 .social a {
   font-size: 32px;
   margin: 0 10px;
-  color: #1FB3B1; }
+  color: #21ACBC; }
 
 .social a:hover {
-  color: #086665; }
+  color: #FFC89E; }
 
 .contact ul li {
   margin-bottom: 10px; }

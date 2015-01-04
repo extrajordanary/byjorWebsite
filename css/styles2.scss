@@ -6,14 +6,14 @@ License: Free to use for personal and commercial, but you need to place back lin
 */
 
 /*color names*/
-$color1: #1FB3B1; /*teal*/
-$color2: #23419c; /*******dark blue*/
-$color3: #086665; /******gray blue */
-$color4: #9C6023; /*orange*/
+$color1: #B86120; 
+$color2: #FFC89E; 
+$color3: #21ACBC; 
+$color4: #9C6023; 
 
-$main-color: $color1; 
-$secondary-color: $color3; 
-/*$contrast-color: $color4;*/
+$main-color: $color3; 
+$secondary-color: $color2; 
+$contrast-color: $color1;
 /*$secondary-contrast-color: $color1; */
 $white-color: #FFF;
 $off-white-color: #DDD;
@@ -30,7 +30,7 @@ $background-color: $off-white-color;
 $paragraph-color: $medium-gray-color;
 
 $link-color: $main-color;
-$link-hover-color: $secondary-color;
+$link-hover-color: $contrast-color;
 $social-link-color: $main-color;
 $social-link-hover-color:$secondary-color;
 
