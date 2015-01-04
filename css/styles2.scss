@@ -6,8 +6,10 @@ License: Free to use for personal and commercial, but you need to place back lin
 */
 
 /*color names*/
-$main-color: #127F32;
-$contrast-color: #32CC5E;
+$main-color: #127F32; /*green*/
+$secondary-color: #32CC5E; /*bright green*/
+$contrast-color: #DF3927; /*salmon*/
+$secondary-contrast-color: #E24040; /*bright red pink*/
 $white-color: #FFF;
 $off-white-color: #DDD;
 $light-gray-color: #AAA;
@@ -20,9 +22,9 @@ $black-color: #000;
 $background-color: $off-white-color;
 $paragraph-color: $medium-gray-color;
 $social-link-color:$main-color;
-$social-link-hover-color:$contrast-color;
-$link-hover-color: #DF3927; /*salmon*/
-$btn-hover-color: #E24040;
+$social-link-hover-color:$secondary-color;
+$link-hover-color: $contrast-color;
+$btn-hover-color: $secondary-contrast-color;
 $quote-color: $white-color;
 $progress-bar-color: $off-white-color;
 $progress-color: $main-color;
@@ -30,9 +32,9 @@ $timeline-panel-background-color: $white-color;
 $timeline-panel-border-color: $off-white-color;
 $panel-place-color: $main-color;
 $panel-project-color: $main-color;
-$panel-side-project-color: $contrast-color;
+$panel-side-project-color: $secondary-color;
 $page-section-even-color: $main-color;
-$page-section-odd-color: $contrast-color;
+$page-section-odd-color: $secondary-color;
 
 @import url(http://fonts.googleapis.com/css?family=Economica:400,700|Slackey);
 * {
@@ -198,7 +200,7 @@ background: transparent !important;
     background: $white-color;
 }
 .navbar-inverse .navbar-nav > li > a {
-	color: $contrast-color;
+	color: $secondary-color;
 }
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
 color: $white-color;
@@ -268,7 +270,7 @@ background: none;
 }
 
 .logo {
-  color: $contrast-color;
+  color: $secondary-color;
   font-family: 'Slackey', sans-serif;
   font-size: 1.6em;
   text-shadow: none;
