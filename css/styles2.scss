@@ -167,8 +167,19 @@ margin: 4px;
     width: 100%;
     background: $main-color;
     z-index: 50;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: $off-white-color;
     border-radius: 0;
     top: 0px;
+
+/*        position: fixed;
+    width: 100%;
+    background: #CC4646;
+    z-index: 50;
+    border-radius: 0;
+    top: 0px;
+    border-bottom: 1px solid #F57676;*/
 }
 
 .navbar-inverse .navbar-toggle {
@@ -262,7 +273,7 @@ background: none;
     padding: 16px 15px;
     line-height: 18px;
     height: 50px;
-    /*color:$main-color;*/;
+    /*color:$main-color;*/
 }
 
 .logo {
@@ -280,13 +291,13 @@ background: none;
 }
 
     .logo:hover {
-        color: $link-hover-color;
+        color: $off-white-color;
     }
 
 .header .navbar {
     margin: 0;
     background: $white-color;
-    border: 0;
+    border: 2px;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -524,10 +535,11 @@ font-size: 1.4em;
   top: 24px;
   left: 0px;
   background-color: $main-color;
-  border-top-right-radius: 8px;
-  border-top-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-bottom-left-radius: 8px;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
 }
 #timeline .timeline-place-name {
   text-align: right;
@@ -554,7 +566,7 @@ font-size: 1.4em;
 
 #timeline .timeline-movement .timeline-item .timeline-panel {
   border: 1px solid $timeline-panel-border-color;
-  border-radius: 3px;
+  /*border-radius: 3px;*/
   background-color: $timeline-panel-background-color;
   color: $paragraph-color;
   padding: 10px;
@@ -564,28 +576,29 @@ font-size: 1.4em;
 }
 #timeline .timeline-movement .panel-top {
   padding-top: 20px;
+  .timeline-panel {
+    border-top-right-radius: 16px;
+  }
 }
 #timeline .timeline-movement .panel-bottom {
   padding-bottom: 20px;
-}
-#timeline .timeline-movement .timeline-item .panel-left {
-  text-align: left;
-}
-#timeline .timeline-movement .timeline-item .panel-right {
-  text-align: right;
+  .timeline-panel {
+    border-bottom-right-radius: 16px;
+  }
 }
 #timeline .timeline-movement .timeline-item .timeline-panel .see-more-link {
   position: absolute;
   left: 10px;
-  /*top: calc(100% - 30px);*/
-  bottom: calc(0% + 10px);
-  /*background-color: $white-color;*/
+  /*top: calc(0% + 10px);*/
+  bottom: calc(0% + 8px);
   background-color: rgba(255, 255, 255, .90);
-  padding: 0 6px;
+  a {
+    padding-right: 10px;
+  }
 }
 #timeline .timeline-movement .timeline-item .timeline-panel .timeline-panel-ul {
   list-style: none;
-  padding: 0;
+  padding-bottom: 25px;
   margin: 0;
 }
 .portfolio-images img {

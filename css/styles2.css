@@ -124,8 +124,18 @@ a:hover {
   width: 100%;
   background: #127F32;
   z-index: 50;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #DDD;
   border-radius: 0;
-  top: 0px; }
+  top: 0px;
+  /*        position: fixed;
+      width: 100%;
+      background: #CC4646;
+      z-index: 50;
+      border-radius: 0;
+      top: 0px;
+      border-bottom: 1px solid #F57676;*/ }
 
 .navbar-inverse .navbar-toggle {
   border-color: #127F32;
@@ -219,12 +229,12 @@ a:hover {
   font-family: 'Slackey', sans-serif; }
 
 .logo:hover {
-  color: #DF3927; }
+  color: #DDD; }
 
 .header .navbar {
   margin: 0;
   background: #FFF;
-  border: 0; }
+  border: 2px; }
 
 .navbar-inverse .navbar-nav > li > a {
   font-size: 1.2em;
@@ -434,10 +444,10 @@ a:hover {
   top: 24px;
   left: 0px;
   background-color: #127F32;
-  border-top-right-radius: 8px;
-  border-top-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-bottom-left-radius: 8px; }
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5); }
 
 #timeline .timeline-place-name {
   text-align: right;
@@ -463,7 +473,7 @@ a:hover {
 
 #timeline .timeline-movement .timeline-item .timeline-panel {
   border: 1px solid #DDD;
-  border-radius: 3px;
+  /*border-radius: 3px;*/
   background-color: #FFF;
   color: #858585;
   padding: 10px;
@@ -473,28 +483,26 @@ a:hover {
 
 #timeline .timeline-movement .panel-top {
   padding-top: 20px; }
+  #timeline .timeline-movement .panel-top .timeline-panel {
+    border-top-right-radius: 16px; }
 
 #timeline .timeline-movement .panel-bottom {
   padding-bottom: 20px; }
-
-#timeline .timeline-movement .timeline-item .panel-left {
-  text-align: left; }
-
-#timeline .timeline-movement .timeline-item .panel-right {
-  text-align: right; }
+  #timeline .timeline-movement .panel-bottom .timeline-panel {
+    border-bottom-right-radius: 16px; }
 
 #timeline .timeline-movement .timeline-item .timeline-panel .see-more-link {
   position: absolute;
   left: 10px;
-  /*top: calc(100% - 30px);*/
-  bottom: calc(0% + 10px);
-  /*background-color: $white-color;*/
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 0 6px; }
+  /*top: calc(0% + 10px);*/
+  bottom: calc(0% + 8px);
+  background-color: rgba(255, 255, 255, 0.9); }
+  #timeline .timeline-movement .timeline-item .timeline-panel .see-more-link a {
+    padding-right: 10px; }
 
 #timeline .timeline-movement .timeline-item .timeline-panel .timeline-panel-ul {
   list-style: none;
-  padding: 0;
+  padding-bottom: 25px;
   margin: 0; }
 
 .portfolio-images img {
