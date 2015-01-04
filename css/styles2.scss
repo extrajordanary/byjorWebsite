@@ -8,7 +8,7 @@ License: Free to use for personal and commercial, but you need to place back lin
 /*color names*/
 $color1: #4F4E96; 
 $color2: #2A3363; 
-$color3: #701301; 
+$color3: #4C78A2; 
 $color4: #9C6023; 
 
 $main-color: $color1; 
@@ -17,7 +17,7 @@ $contrast-color: $color3;
 /*$secondary-contrast-color: $color1; */
 $white-color: #FFF;
 /*$off-white-color: #DDD;*/
-$off-white-color: #D2D0E2;
+$off-white-color: #F3F3FF;
 $light-gray-color: #AAA;
 $medium-gray-color: #858585;
 $dark-gray-color: #444;
@@ -30,8 +30,9 @@ $logo-color: $secondary-color;
 $background-color: $off-white-color;
 $paragraph-color: $medium-gray-color;
 
-$link-color: $main-color;
-$link-hover-color: $contrast-color;
+$link-color: $contrast-color;
+$link-hover-color: $secondary-color;
+$nav-link-hover-color: $off-white-color;
 $social-link-color: $main-color;
 $social-link-hover-color:$secondary-color;
 
@@ -217,7 +218,7 @@ background: transparent !important;
 	color: $secondary-color;
 }
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-color: $white-color;
+color: $off-white-color;
 }
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
 color: $white-color;
@@ -321,7 +322,7 @@ background: none;
 }
 
 .navbar-nav > li:hover > a {
-    color: $white-color;
+    color: $nav-link-hover-color;
 }
 
 .header .navbar-nav > li > a {
