@@ -5,8 +5,13 @@ Description: This theme is a pretty versatile, that places the emphasis of the h
 License: Free to use for personal and commercial, but you need to place back link in the bottom of the template.
 */
 /*color names*/
+/*teal*/
+/*dark blue*/
+/******gray blue */
+/*orange*/
 /*color settings*/
-/*salmon*/
+/*$panel-project-color: $contrast-color;*/
+/*$panel-side-project-color: $secondary-color;*/
 @import url(http://fonts.googleapis.com/css?family=Economica:400,700|Slackey);
 * {
   margin: 0;
@@ -25,11 +30,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 ::selection {
   color: #FFF;
-  background: #127F32; }
+  background: #237e9c; }
 
 ::-moz-selection {
   color: #FFF;
-  background: #127F32; }
+  background: #237e9c; }
 
 p {
   color: #858585;
@@ -67,7 +72,7 @@ p {
   background: rgba(255, 255, 255, 0.35); }
 
 a {
-  color: #127F32;
+  color: #237e9c;
   text-decoration: none;
   text-shadow: none;
   -webkit-transition: all 0.2s linear;
@@ -77,7 +82,7 @@ a {
   transition: all 0.2s linear; }
 
 a:hover {
-  color: #DF3927;
+  color: #23419c;
   text-decoration: none; }
 
 .btn {
@@ -85,10 +90,10 @@ a:hover {
   border-radius: 0px; }
 
 .btn:hover {
-  background: #E24040; }
+  background: #23419c; }
 
 .btn-primary {
-  background: #127F32; }
+  background: #237e9c; }
 
 .form-control {
   border-radius: 0px; }
@@ -109,7 +114,7 @@ a:hover {
   bottom: 20px;
   right: 20px;
   z-index: 5;
-  background: #127F32; }
+  background: #237e9c; }
 
 .topHome .fa-2x {
   font-size: 20px;
@@ -121,7 +126,7 @@ a:hover {
 .header {
   position: fixed;
   width: 100%;
-  background: #127F32;
+  background: #237e9c;
   z-index: 50;
   border-bottom-width: 1px;
   border-bottom-style: solid;
@@ -130,8 +135,8 @@ a:hover {
   top: 0px; }
 
 .navbar-inverse .navbar-toggle {
-  border-color: #127F32;
-  background-color: #127F32; }
+  border-color: #237e9c;
+  background-color: #237e9c; }
 
 .header .navbar {
   margin: 0;
@@ -141,16 +146,16 @@ a:hover {
   /*background-color: $main-color;*/ }
 
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-  background: #127F32; }
+  background: #237e9c; }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-  color: #127F32; }
+  color: #237e9c; }
 
 .navbar-inverse .navbar-toggle:hover .icon-bar {
   background: #FFF; }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: #32CC5E; }
+  color: #23419c; }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
   color: #FFF; }
@@ -162,7 +167,7 @@ a:hover {
 /*.carousel-inner*/
 #myCarousel {
   margin-top: 50px;
-  border-bottom: 4px solid #127F32; }
+  border-bottom: 4px solid #237e9c; }
 
 .carousel-caption {
   padding: 0px;
@@ -187,13 +192,13 @@ a:hover {
 
 .actionPanel {
   padding: 25px 0;
-  background: #127F32; }
+  background: #237e9c; }
 
 .actionPanel h3 {
   margin: 0px; }
 
 .circle {
-  background: #127F32;
+  background: #237e9c;
   height: 60px;
   width: 60px;
   border-radius: 35px;
@@ -208,7 +213,7 @@ a:hover {
   height: 50px; }
 
 .logo {
-  color: #32CC5E;
+  color: #23419c;
   font-family: 'Slackey', sans-serif;
   font-size: 1.6em;
   text-shadow: none;
@@ -262,7 +267,7 @@ a:hover {
   font-weight: 200; }
 
 .page-section h2 {
-  color: #127F32; }
+  color: #237e9c; }
 
 .page-section p {
   font-size: 1.1em;
@@ -272,7 +277,7 @@ a:hover {
   background: #2c2c2c; }
 
 .darkBg .fa {
-  color: #127F32; }
+  color: #237e9c; }
 
 /*--- Banner ----*/
 .banner-container {
@@ -385,7 +390,7 @@ a:hover {
   background-color: #DDD; }
 
 .progress .progress-bar {
-  background-color: #127F32; }
+  background-color: #237e9c; }
 
 /*Timeline*/
 #timeline {
@@ -420,7 +425,7 @@ a:hover {
   height: calc(100% - 48px);
   top: 24px;
   left: 0px;
-  background-color: #127F32;
+  background-color: #237e9c;
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
   -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
@@ -496,8 +501,9 @@ a:hover {
   margin-top: 20px; }
 
 #timeline .timeline-movement .timeline-item .timeline-panel .timeline-panel-ul li span.panel-name {
-  color: #127F32;
-  font-size: 1.5em; }
+  color: #237e9c;
+  font-size: 1.5em;
+  font-weight: 700; }
 
 #timeline .timeline-movement .timeline-item .timeline-panel .timeline-panel-ul ul {
   text-align: left;
@@ -535,11 +541,11 @@ nav#filter li {
 nav#filter a {
   padding: 4px 12px;
   line-height: 20px;
-  border: 1px solid #127F32;
+  border: 1px solid #237e9c;
   text-decoration: none; }
 
 .current {
-  background: #127F32;
+  background: #237e9c;
   color: #FFF; }
 
 .portfolio-items article img {
@@ -680,10 +686,10 @@ body {
 .pageSection {
   min-height: 600px;
   padding: 20px;
-  background: #127F32; }
+  background: #237e9c; }
 
 .pageSection:nth-child(odd) {
-  background: #32CC5E; }
+  background: #23419c; }
 
 .socialIcons li {
   list-style: none;
@@ -697,10 +703,10 @@ footer {
 .social a {
   font-size: 32px;
   margin: 0 10px;
-  color: #127F32; }
+  color: #237e9c; }
 
 .social a:hover {
-  color: #32CC5E; }
+  color: #23419c; }
 
 .contact ul li {
   margin-bottom: 10px; }
