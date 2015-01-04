@@ -6,6 +6,7 @@ License: Free to use for personal and commercial, but you need to place back lin
 */
 /*color names*/
 /*$secondary-contrast-color: $color1; */
+/*$off-white-color: #DDD;*/
 /*color settings*/
 @import url(http://fonts.googleapis.com/css?family=Economica:400,700|Slackey);
 * {
@@ -17,7 +18,7 @@ body {
   font-size: 18px;
   font-family: 'Economica', sans-serif;
   -webkit-font-smoothing: antialiased;
-  background: #DDD; }
+  background: #D2D0E2; }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: 'Economica', sans-serif;
@@ -25,11 +26,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 ::selection {
   color: #FFF;
-  background: #016B41; }
+  background: #4F4E96; }
 
 ::-moz-selection {
   color: #FFF;
-  background: #016B41; }
+  background: #4F4E96; }
 
 p {
   color: #858585;
@@ -67,7 +68,7 @@ p {
   background: rgba(255, 255, 255, 0.35); }
 
 a {
-  color: #016B41;
+  color: #4F4E96;
   text-decoration: none;
   text-shadow: none;
   -webkit-transition: all 0.2s linear;
@@ -85,10 +86,10 @@ a:hover {
   border-radius: 0px; }
 
 .btn:hover {
-  background: #51B28C; }
+  background: #2A3363; }
 
 .btn-primary {
-  background: #016B41; }
+  background: #4F4E96; }
 
 .form-control {
   border-radius: 0px; }
@@ -98,7 +99,7 @@ a:hover {
 
 .copyright {
   color: #858585;
-  background: #DDD;
+  background: #D2D0E2;
   padding: 20px 0; }
 
 #top {
@@ -109,7 +110,7 @@ a:hover {
   bottom: 20px;
   right: 20px;
   z-index: 5;
-  background: #016B41; }
+  background: #4F4E96; }
 
 .topHome .fa-2x {
   font-size: 20px;
@@ -121,17 +122,17 @@ a:hover {
 .header {
   position: fixed;
   width: 100%;
-  background: #016B41;
+  background: #4F4E96;
   z-index: 50;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #DDD;
+  border-bottom-color: #D2D0E2;
   border-radius: 0;
   top: 0px; }
 
 .navbar-inverse .navbar-toggle {
-  border-color: #016B41;
-  background-color: #016B41; }
+  border-color: #4F4E96;
+  background-color: #4F4E96; }
 
 .header .navbar {
   margin: 0;
@@ -141,16 +142,16 @@ a:hover {
   /*background-color: $main-color;*/ }
 
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-  background: #016B41; }
+  background: #4F4E96; }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-  color: #016B41; }
+  color: #4F4E96; }
 
 .navbar-inverse .navbar-toggle:hover .icon-bar {
   background: #FFF; }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: #51B28C; }
+  color: #2A3363; }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
   color: #FFF; }
@@ -162,7 +163,7 @@ a:hover {
 /*.carousel-inner*/
 #myCarousel {
   margin-top: 50px;
-  border-bottom: 4px solid #016B41; }
+  border-bottom: 4px solid #4F4E96; }
 
 .carousel-caption {
   padding: 0px;
@@ -187,13 +188,13 @@ a:hover {
 
 .actionPanel {
   padding: 25px 0;
-  background: #016B41; }
+  background: #4F4E96; }
 
 .actionPanel h3 {
   margin: 0px; }
 
 .circle {
-  background: #016B41;
+  background: #4F4E96;
   height: 60px;
   width: 60px;
   border-radius: 35px;
@@ -208,7 +209,7 @@ a:hover {
   height: 50px; }
 
 .logo {
-  color: #51B28C;
+  color: #2A3363;
   font-family: 'Slackey', sans-serif;
   font-size: 1.6em;
   text-shadow: none;
@@ -220,7 +221,7 @@ a:hover {
   font-family: 'Slackey', sans-serif; }
 
 .logo:hover {
-  color: #DDD; }
+  color: #D2D0E2; }
 
 .header .navbar {
   margin: 0;
@@ -262,7 +263,7 @@ a:hover {
   font-weight: 200; }
 
 .page-section h2 {
-  color: #016B41; }
+  color: #4F4E96; }
 
 .page-section p {
   font-size: 1.1em;
@@ -272,7 +273,7 @@ a:hover {
   background: #2c2c2c; }
 
 .darkBg .fa {
-  color: #016B41; }
+  color: #4F4E96; }
 
 /*--- Banner ----*/
 .banner-container {
@@ -382,10 +383,10 @@ a:hover {
   height: 15px;
   margin-top: 5px;
   margin-left: 20px;
-  background-color: #DDD; }
+  background-color: #D2D0E2; }
 
 .progress .progress-bar {
-  background-color: #016B41; }
+  background-color: #4F4E96; }
 
 /*Timeline*/
 #timeline {
@@ -404,12 +405,12 @@ a:hover {
   position: absolute;
   top: calc(100% - 16px);
   left: 0px;
-  background-color: #DDD;
+  background-color: #D2D0E2;
   z-index: 36; }
 
 #timeline .timeline-badge span.timeline-balloon-date {
   position: relative;
-  background-color: #DDD;
+  background-color: #D2D0E2;
   padding-right: 8px;
   top: -2px;
   font-size: 1.4em; }
@@ -420,7 +421,7 @@ a:hover {
   height: calc(100% - 48px);
   top: 24px;
   left: 0px;
-  background-color: #016B41;
+  background-color: #4F4E96;
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
   -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
@@ -428,7 +429,7 @@ a:hover {
 
 #timeline .timeline-place-name {
   text-align: right;
-  color: #FFF;
+  color: #D2D0E2;
   font-size: 2.0em;
   width: 400px;
   margin: 0 0 0 0;
@@ -449,7 +450,7 @@ a:hover {
   padding: 10px 0; }
 
 #timeline .timeline-movement .timeline-item .timeline-panel {
-  border: 1px solid #DDD;
+  border: 1px solid #D2D0E2;
   background-color: #FFF;
   color: #858585;
   padding: 20px 25px;
@@ -481,7 +482,7 @@ a:hover {
   margin: 0; }
 
 .portfolio-images img {
-  border: 1px solid #DDD;
+  border: 1px solid #D2D0E2;
   vertical-align: middle;
   margin-bottom: 10px;
   margin-top: 10px; }
@@ -496,7 +497,7 @@ a:hover {
   margin-top: 20px; }
 
 #timeline .timeline-movement .timeline-item .timeline-panel .timeline-panel-ul li span.panel-name {
-  color: #016B41;
+  color: #4F4E96;
   font-size: 1.5em;
   font-weight: 700; }
 
@@ -536,11 +537,11 @@ nav#filter li {
 nav#filter a {
   padding: 4px 12px;
   line-height: 20px;
-  border: 1px solid #016B41;
+  border: 1px solid #4F4E96;
   text-decoration: none; }
 
 .current {
-  background: #016B41;
+  background: #4F4E96;
   color: #FFF; }
 
 .portfolio-items article img {
@@ -640,7 +641,7 @@ nav#filter a {
   text-decoration: none; }
 
 hr {
-  border-color: #DDD;
+  border-color: #D2D0E2;
   /* used? */ }
 
 body {
@@ -676,15 +677,15 @@ body {
 
 #navigation > li > a.current,
 #navigation > li:hover > a {
-  background: #DDD; }
+  background: #D2D0E2; }
 
 .pageSection {
   min-height: 600px;
   padding: 20px;
-  background: #016B41; }
+  background: #4F4E96; }
 
 .pageSection:nth-child(odd) {
-  background: #51B28C; }
+  background: #2A3363; }
 
 .socialIcons li {
   list-style: none;
@@ -698,10 +699,10 @@ footer {
 .social a {
   font-size: 32px;
   margin: 0 10px;
-  color: #016B41; }
+  color: #4F4E96; }
 
 .social a:hover {
-  color: #51B28C; }
+  color: #2A3363; }
 
 .contact ul li {
   margin-bottom: 10px; }

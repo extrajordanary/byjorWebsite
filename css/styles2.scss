@@ -6,8 +6,8 @@ License: Free to use for personal and commercial, but you need to place back lin
 */
 
 /*color names*/
-$color1: #016B41; 
-$color2: #51B28C; 
+$color1: #4F4E96; 
+$color2: #2A3363; 
 $color3: #701301; 
 $color4: #9C6023; 
 
@@ -16,7 +16,8 @@ $secondary-color: $color2;
 $contrast-color: $color3;
 /*$secondary-contrast-color: $color1; */
 $white-color: #FFF;
-$off-white-color: #DDD;
+/*$off-white-color: #DDD;*/
+$off-white-color: #D2D0E2;
 $light-gray-color: #AAA;
 $medium-gray-color: #858585;
 $dark-gray-color: #444;
@@ -39,6 +40,8 @@ $btn-hover-color: $secondary-color;
 $quote-color: $white-color;
 $progress-bar-color: $off-white-color;
 $progress-color: $main-color;
+$timeline-place-bar-color: $main-color;
+$timeline-place-name-color: $off-white-color;
 $timeline-panel-background-color: $white-color;
 $timeline-panel-border-color: $off-white-color;
 
@@ -523,7 +526,7 @@ font-size: 1.4em;
   height: calc(100% - 48px);
   top: 24px;
   left: 0px;
-  background-color: $main-color;
+  background-color: $timeline-place-bar-color;
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
 
@@ -532,7 +535,7 @@ font-size: 1.4em;
 }
 #timeline .timeline-place-name {
   text-align: right;
-  color: $white-color;
+  color: $timeline-place-name-color;
   font-size: 2.0em;
   width: 400px;
   margin: 0 0 0 0;
