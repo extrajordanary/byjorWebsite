@@ -23,7 +23,7 @@ $social-link-color:$main-color;
 $social-link-hover-color:$contrast-color;
 $link-hover-color: #DF3927; /*salmon*/
 $btn-hover-color: #E24040;
-$quote-color: $off-white-color;
+$quote-color: $white-color;
 $progress-bar-color: $off-white-color;
 $progress-color: $main-color;
 $timeline-panel-background-color: $white-color;
@@ -445,37 +445,17 @@ background: none;
     border: 2px solid rgba(255, 255, 255, 0.6);
 }
 .secPad{
-	padding:60px 0;
+	padding:25px 0;
 }
-/*Intro Content*/
-#introText {
-padding:50px 0;
-background:$white-color;
-}
-
+/*About*/
 #about {
   background:$white-color;
 }
-/*#aboutUs .txtHead{
-background:$white-color;
-padding:20px 10px;
-}
-#aboutUs .txtHead .fa {
-font-size: 58px;
-color: #213809;
-}*/
-/*.tileBox p{
-background-color: #f0f0f0;
-font-size: 15px;
-color: #777777;
-padding: 20px;
-margin: 0px;
-}*/
 
 /*parlex*/
 .bg-parlex {
 padding-top: 0px;
-background-image: url('../images/banner-bg.jpg');
+background-image: url('../images/banner-bg5.png');
 background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;

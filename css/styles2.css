@@ -359,35 +359,16 @@ a:hover {
   border: 2px solid rgba(255, 255, 255, 0.6); }
 
 .secPad {
-  padding: 60px 0; }
+  padding: 25px 0; }
 
-/*Intro Content*/
-#introText {
-  padding: 50px 0;
-  background: #FFF; }
-
+/*About*/
 #about {
   background: #FFF; }
 
-/*#aboutUs .txtHead{
-background:$white-color;
-padding:20px 10px;
-}
-#aboutUs .txtHead .fa {
-font-size: 58px;
-color: #213809;
-}*/
-/*.tileBox p{
-background-color: #f0f0f0;
-font-size: 15px;
-color: #777777;
-padding: 20px;
-margin: 0px;
-}*/
 /*parlex*/
 .bg-parlex {
   padding-top: 0px;
-  background-image: url("../images/banner-bg.jpg");
+  background-image: url("../images/banner-bg5.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; }
@@ -398,7 +379,7 @@ margin: 0px;
 
 /*Quote*/
 .quote h2 {
-  color: #DDD;
+  color: #FFF;
   font-family: 'Economica', sans-serif;
   font-weight: 700; }
 
