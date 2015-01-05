@@ -17,11 +17,10 @@ $secondary-color: $color2b;
 $contrast-color: $color4;
 /*$secondary-contrast-color: $color1; */
 $white-color: #FFF;
-/*$off-white-color: #DDD;*/
-$off-white-color: #FAFAFC;
-$light-gray-color: #AAA;
+$off-white-color: #FAFAFC; /*blue tint*/
+$light-gray-color: #DDD;
 $medium-gray-color: #858585;
-$dark-gray-color: #444;
+$dark-gray-color: #777;
 $almost-black-color: #111;
 $black-color: #000; 
 
@@ -29,7 +28,7 @@ $black-color: #000;
 $logo-color: $secondary-color;
 
 $background-color: $off-white-color;
-$paragraph-color: $medium-gray-color;
+$paragraph-color: $dark-gray-color;
 
 $link-color: $secondary-color;
 $link-hover-color: $contrast-color;
@@ -46,6 +45,7 @@ $timeline-place-bar-color: $main-color;
 $timeline-place-name-color: $off-white-color;
 $timeline-panel-background-color: $white-color;
 $timeline-panel-border-color: $off-white-color;
+$portfolio-image-border-color: $light-gray-color;
 
 $panel-place-color: $main-color;
 
@@ -595,7 +595,7 @@ font-size: 1.4em;
 }
 .portfolio-images {
   img {
-    border: 1px solid $timeline-panel-border-color;
+    border: 1px solid $portfolio-image-border-color;
     vertical-align: middle;
     margin-bottom: 10px;
     margin-top: 10px;
