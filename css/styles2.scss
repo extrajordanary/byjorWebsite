@@ -34,13 +34,13 @@ $link-color: $secondary-color;
 $link-hover-color: $contrast-color;
 $nav-link-hover-color: $off-white-color;
 $social-link-color: $main-color;
-$social-link-hover-color:$secondary-color;
+$social-link-hover-color:$contrast-color;
 
 $btn-hover-color: $secondary-color;
 
 $quote-color: $white-color;
 $progress-bar-color: $off-white-color;
-$progress-color: $main-color;
+$progress-color: $secondary-color;
 $timeline-place-bar-color: $main-color;
 $timeline-place-name-color: $off-white-color;
 $timeline-panel-background-color: $white-color;
@@ -70,7 +70,7 @@ body {
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: 'Economica', sans-serif;
   font-weight: 700;
-  color: $contrast-color;
+  color: $main-color;
 }
 
 ::selection {
