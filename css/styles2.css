@@ -496,18 +496,25 @@ a:hover {
 
 .place-images img {
   vertical-align: middle;
-  /*max-height: 200px;*/
-  /*max-width: 250px;*/
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
   margin-top: 20px; }
 
-#timeline .timeline-movement .timeline-item .timeline-panel .timeline-panel-ul li span.panel-name {
+#timeline .timeline-movement .timeline-item .place .panel-name {
+  color: #127F32;
+  font-size: 1.5em;
+  font-weight: 700; }
+#timeline .timeline-movement .timeline-item .project .panel-name {
   color: #127F32;
   font-size: 1.5em;
   font-weight: 700; }
 
+/*#timeline .timeline-movement .timeline-item .timeline-panel .timeline-panel-ul li span.panel-name {
+  color: $panel-place-color;
+  font-size: 1.5em;
+  font-weight: 700;
+}*/
 #timeline .timeline-movement .timeline-item .timeline-panel .timeline-panel-ul ul {
   text-align: left;
   list-style: square;

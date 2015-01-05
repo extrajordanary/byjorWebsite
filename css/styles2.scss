@@ -21,7 +21,7 @@ $off-white-color: #FAFAFC; /*blue tint*/
 $light-gray-color: #DDD;
 $medium-gray-color: #858585;
 $dark-gray-color: #777;
-$almost-black-color: #111;
+$almost-black-color: #333;
 $black-color: #000; 
 
 /*color settings*/
@@ -48,6 +48,7 @@ $timeline-panel-border-color: $off-white-color;
 $portfolio-image-border-color: $light-gray-color;
 
 $panel-place-color: $main-color;
+$panel-project-color: $main-color;
 
 $page-section-even-color: $main-color;
 $page-section-odd-color: $secondary-color;
@@ -603,19 +604,32 @@ font-size: 1.4em;
 }
 .place-images img {
   vertical-align: middle;
-  /*max-height: 200px;*/
-  /*max-width: 250px;*/
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
   margin-top: 20px;
 }
-
-#timeline .timeline-movement .timeline-item .timeline-panel .timeline-panel-ul li span.panel-name {
+#timeline .timeline-movement .timeline-item {
+  .place {
+    .panel-name {
+      color: $panel-place-color;
+      font-size: 1.5em;
+      font-weight: 700;
+    }
+  }
+  .project {
+    .panel-name {
+      color: $panel-project-color;
+      font-size: 1.5em;
+      font-weight: 700;
+    }
+  }
+}
+/*#timeline .timeline-movement .timeline-item .timeline-panel .timeline-panel-ul li span.panel-name {
   color: $panel-place-color;
   font-size: 1.5em;
   font-weight: 700;
-}
+}*/
 #timeline .timeline-movement .timeline-item .timeline-panel .timeline-panel-ul ul {
   text-align: left;
   list-style: square;
