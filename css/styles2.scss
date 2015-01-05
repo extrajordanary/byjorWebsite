@@ -228,7 +228,7 @@ background: none;
 .navbar-toggle {
 }
 /*.carousel-inner*/
-#myCarousel {
+/*#myCarousel {
     margin-top: 50px;
     border-bottom: 4px solid $main-color;
 }
@@ -258,25 +258,25 @@ background: none;
         color: $white-color;
         font-weight: bold;
         text-shadow: $white-color 1px 1px 1px;
-    }
+    }*/
 
-.actionPanel {
+/*.actionPanel {
     padding: 25px 0;
     background: $main-color;
 }
 
     .actionPanel h3 {
         margin: 0px;
-    }
+    }*/
 
-.circle {
+/*.circle {
     background: $main-color;
     height: 60px;
     width: 60px;
     border-radius: 35px;
     color: $white-color;
     line-height: 60px !important;
-}
+}*/
 /*----Nav ----*/
 .header .navbar-brand {
     float: left;
@@ -290,7 +290,7 @@ background: none;
   font-family: 'Slackey', sans-serif;
   font-size: 1.6em;
   text-shadow: none;
-  margin: 8px 0 0 0;
+  margin: 0px 0 0 0;
   font-weight:400;
 }
 
@@ -603,8 +603,8 @@ font-size: 1.4em;
 }
 .place-images img {
   vertical-align: middle;
-  max-height: 150px;
-  max-width: 200px;
+  /*max-height: 200px;*/
+  /*max-width: 250px;*/
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
@@ -894,12 +894,16 @@ footer {
 
     .navbar-nav {
         float: right;
+        margin: -10px;
     }
 
     .navbar-inverse .navbar-nav > li > a {  
         padding: 5px 12px !important;
         border-radius: 5px;
         margin: 19px 0px;
+          /*position: absolute;*/
+  margin-right: auto;
+      margin-left: auto;
     }
 }
 
@@ -973,6 +977,9 @@ footer {
         margin-top: 67px;
     }
 
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+      border-top-color: $secondary-color;
+    }
     .navbar-inverse .navbar-nav > li > a {
         font-size: 0.9em;
         padding: 5px 7px !important;
@@ -980,7 +987,8 @@ footer {
     }
 
     .navbar-toggle {
-        margin: 17px;
+      padding: 10px;
+        margin: 8px 0px 8px 0px;
     }
 
     .da-slide h2 {
