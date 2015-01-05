@@ -22,7 +22,8 @@ body {
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: 'Economica', sans-serif;
-  font-weight: 700; }
+  font-weight: 700;
+  color: #53228C; }
 
 ::selection {
   color: #FFF;
@@ -270,7 +271,7 @@ a:hover {
   font-weight: 200; }
 
 .page-section h2 {
-  color: #127F32; }
+  /*color: $main-color;*/ }
 
 .page-section p {
   font-size: 1.1em;
@@ -383,7 +384,7 @@ a:hover {
 .skilltitle {
   text-align: left;
   font-weight: 600;
-  padding-right: 0px; }
+  padding-right: 10px; }
 
 .progress {
   border-radius: 0px;
@@ -660,7 +661,8 @@ hr {
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif; }
+  color: #858585;
+  /*font-family: Arial, sans-serif;*/ }
 
 #resume {
   background: #FFF; }

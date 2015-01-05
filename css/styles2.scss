@@ -70,6 +70,7 @@ body {
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: 'Economica', sans-serif;
   font-weight: 700;
+  color: $contrast-color;
 }
 
 ::selection {
@@ -353,7 +354,7 @@ background: none;
     }
 
 .page-section h2 {
-    color: $main-color;
+    /*color: $main-color;*/
 }
 
 .page-section p {
@@ -483,7 +484,7 @@ font-weight: 700;
 .skilltitle {
 text-align: left;
 font-weight: 600;
-padding-right: 0px;
+padding-right: 10px;
 }
 .progress {
 border-radius: 0px;
@@ -803,7 +804,8 @@ hr {
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    color: $medium-gray-color;
+    /*font-family: Arial, sans-serif;*/
 }
 
 #resume {
