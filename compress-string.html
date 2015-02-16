@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf8">
+    <title>Sentence Compression - Jordan Arnesen</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <script src="js/processing.js"></script>
+  </head>
+  <body>
+    <h1>Sentence Compression Exercise</h1>
+    <h4>by Jordan Arnesen</h4>
+    <script type="text/processing">
+
+      char letter;
+      String original = "Hit enter to clear and start a new sentence.";
+      String compressed = "";
+
+      void setup() {
+        size(640, 360);
+      }
+
+      void draw() {        
+        background(80);
+
+        textSize(14);
+        text("Click inside this window and type to enter the sentence that you want to compress.", 25, 25);
+        text("Press ENTER to clear and start over. (BACKSPACE does not work.)", 25, 45);
+
+        textSize(20);
+        text("Original Sentence:", 50, 100);
+        text(original, 70, 130);
+        
+        text("Compressed Sentence:", 50, 250);
+        text(compressed, 70, 280);
+      }
+
+      void keyPressed() {
+        // The variable "key" always contains the value of the most recent key pressed.
+        if (key == ENTER || key == RETURN) {
+          original = "";
+          compressed = "";
+        }
+        else if (key == BACKSPACE || key == DELETE || key == TAB || key == ESC) {
+          // do nothing
+        }
+        else if (key >= 32 && key <= 126) {
+          letter = new String(key);
+          original = original + letter;
+          updateCompressed();
+
+          // Write the letter to the console
+          // println(key + " " + letter);
+        }
+      }
+
+      void updateCompressed() {
+        // clear string
+        compressed = "";
+
+        int[] originalKeys = int(original.toCharArray());
+        String currentWord;
+        int currentKey; 
+        // int prevKey; 
+        int currentCount = 0;
+
+        for (int i = 0; i < original.length(); i ++) {
+          currentKey = originalKeys[i];
+          // println(currentKey);
+
+          if ((currentKey >= 65 && currentKey <= 90) || (currentKey >= 97 && currentKey <= 122)) {
+            // alpha
+            if (currentCount == 0) {
+              // start of a letter stretch
+              value = original.charAt(i);
+              compressed = compressed + value;
+            } 
+            currentCount ++;
+          } else {
+            // non-alpha
+            value = original.charAt(i);
+
+            if (currentCount > 2) {
+              // end prev letter stretch
+              lettersCompressed = currentCount - 2;
+              prevValue = original.charAt(i-1);
+              compressed = compressed + lettersCompressed + prevValue + value;
+              // set count back to 0
+            } else if (currentCount > 1) {
+              prevValue = original.charAt(i-1);
+              compressed = compressed + prevValue + value;
+            } else {
+              // value = original.charAt(i);
+              compressed = compressed + value;
+              // println(currentKey + " - " + value);
+            }
+            currentCount = 0;
+          }
+
+          // prevKey = currentKey;
+        }
+      }
+
+
+    </script>
+
+    <canvas></canvas>
+
+  </body>
+</html>
