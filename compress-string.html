@@ -47,9 +47,6 @@
           letter = new String(key);
           original = original + letter;
           updateCompressed();
-
-          // Write the letter to the console
-          // println(key + " " + letter);
         }
       }
 
@@ -60,12 +57,10 @@
         int[] originalKeys = int(original.toCharArray());
         String currentWord;
         int currentKey; 
-        // int prevKey; 
         int currentCount = 0;
 
         for (int i = 0; i < original.length(); i ++) {
           currentKey = originalKeys[i];
-          // println(currentKey);
 
           if ((currentKey >= 65 && currentKey <= 90) || (currentKey >= 97 && currentKey <= 122)) {
             // alpha
@@ -89,14 +84,10 @@
               prevValue = original.charAt(i-1);
               compressed = compressed + prevValue + value;
             } else {
-              // value = original.charAt(i);
               compressed = compressed + value;
-              // println(currentKey + " - " + value);
             }
             currentCount = 0;
           }
-
-          // prevKey = currentKey;
         }
       }
 
