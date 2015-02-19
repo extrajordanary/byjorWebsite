@@ -9,34 +9,37 @@
     <script src="../js/processing.js"></script>
   </head>
   <body>
-    <div class="container row" style="margin: 20px">
+    <div class="container" style="margin: 20px">
       <h1>Tic Tac Total Defeat</h1>
       <h4 style="padding-bottom: 30px">by Jordan Arnesen</h4>
-      <div class="col-md-5">
-
-        <p style="font-size: 1.2em">You're <span style="color: #FF0000">X</span>. Think you can beat the AI player <span style="color: #0000FF">O</span>?
-          <ul style="padding-bottom: 30px; font-size: 1.2em">
-            <li style="padding: 5px">
-              When it's <span style="color: #FF0000">X</span>'s turn, make a move by typing the letter of the cell you want to claim.<br>(Be sure to click inside the gray game window first.)
-            </li>
-            <li style="padding: 5px">
-              If you want to see the AI play against itself, press <strong>'A'</strong> whenever it's <span style="color: #FF0000">X</span>'s turn.
-            </li>
-            <li style="padding: 5px">
-              If you want to end a game early, press <strong>'Q'</strong> to quit.
-            </li>
-          </ul>
-        </p>
-        <p style="font-size: 1.2em">
-          AI logic uses the MiniMax algorithm - big thanks to Jason Fox's great <a href="http://neverstopbuilding.com/minimax" target="_blank">blog post</a> on the subject. Written in <a href="http://processing.org" target="_blank">Processing</a>, using <a href="http://processingjs.org" target="_blank">Processing.js</a> for online embedding.
-        </p>
-        <p style="font-size: 1.2em">
-          You can check out the game source code <a href="https://github.com/extrajordanary/byjorWebsite/blob/master/play/Tic_Tac_Total_Defeat.pde" target="_blank">on Github</a> and see my full portfolio of projects <a href="http://byjor.com" target="_blank">here</a>.
-        </p>
-      </div>
       
-      <div class="col-md-6">
-        <canvas data-processing-sources="Tic_Tac_Total_Defeat.pde"></canvas>
+      <div class="row panel">
+        <div class="col-md-6">
+
+          <p style="font-size: 1.2em">You're <span style="color: #FF0000">X</span>. Think you can beat the AI player <span style="color: #0000FF">O</span>?
+            <ul style="padding-bottom: 30px; font-size: 1.2em">
+              <li style="padding: 5px">
+                When it's <span style="color: #FF0000">X</span>'s turn, make a move by typing the letter of the cell you want to claim.<br>(Be sure to click inside the gray game window first.)
+              </li>
+              <li style="padding: 5px">
+                If you want to see the AI play against itself, press <strong>'A'</strong> whenever it's <span style="color: #FF0000">X</span>'s turn.
+              </li>
+              <li style="padding: 5px">
+                If you want to end a game early, press <strong>'Q'</strong> to quit.
+              </li>
+            </ul>
+          </p>
+          <p style="font-size: 1.2em">
+            AI logic uses the MiniMax algorithm - big thanks to Jason Fox's great <a href="http://neverstopbuilding.com/minimax" target="_blank">blog post</a> on the subject. Written in <a href="http://processing.org" target="_blank">Processing</a>, using <a href="http://processingjs.org" target="_blank">Processing.js</a> for online embedding.
+          </p>
+          <p style="font-size: 1.2em">
+            You can check out the game source code <a href="https://github.com/extrajordanary/byjorWebsite/blob/master/play/Tic_Tac_Total_Defeat.pde" target="_blank">on Github</a> and see my full portfolio of projects <a href="http://byjor.com" target="_blank">here</a>.
+          </p>
+        </div>
+        
+        <div class="col-md-6">
+          <canvas data-processing-sources="Tic_Tac_Total_Defeat.pde"></canvas>
+        </div>
       </div>
 
     </div>
