@@ -134,9 +134,9 @@ void keyPressed() {
     }
   } else {
     // player must make a move
-    if (key == 'q') { // for testing only
+    if (key == 'q') { // to quit a game early
       isGameOver = true;
-    } else if (key == 'a') {
+    } else if (key == 'a') { // manually trigger AI
       takeTurnAI();
     } else {
       int cell = cellLetters.indexOf(key); 
