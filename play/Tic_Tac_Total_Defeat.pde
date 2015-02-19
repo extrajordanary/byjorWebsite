@@ -51,6 +51,7 @@ void draw() {
   // If it's the AI's turn make a move
   if (playAgainstAI && !isGameOver && currentPlayer < 0) { 
     if (millis() - turnStart > turnDelay) {
+      // delayed to not make moves creepy fast
       takeTurnAI();
     }
   }
@@ -297,7 +298,7 @@ int getBestOutcome(int[] theGameState, int player, int depth) {
     int[] newGameState = getPossibleGameState(theGameState, testCell, player);
 
     if (madeWinningMove(newGameState, player)) {
-      bestOutcome = (10 * player) - (depth * player);
+      bestOutcome = (10 * player) + (-depth * player);
     } else {
       bestOutcome = 0;
     }
@@ -325,7 +326,7 @@ ArrayList getBestOutcomesArray(int[] theGameState, int player, int depth) {
       int best;
       if (madeWinningMove(newGameState, player)) {
         // if win, set outcome value to add to array
-        best = (10 * player) - (depth * player);
+        best = (10 * player) - (-depth * player);
       } else {
         // recursive call, passed to next player
         int nextPlayer = player * -1;
@@ -333,7 +334,7 @@ ArrayList getBestOutcomesArray(int[] theGameState, int player, int depth) {
       }
       bestOutcomes.add(best);
     }
-  if (debug) println(depth);
+  if (debug) println("Depth: "+depth);
   if (debug) printArray(bestOutcomes);
   return bestOutcomes;
 }
