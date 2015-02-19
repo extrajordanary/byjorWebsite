@@ -3,27 +3,41 @@
   <head>
     <meta charset="utf8">
     <title>Tic Tac Total Defeat - Jordan Arnesen</title>
+      <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="icon" type="image/png" href="../favicon.ico">
     <script src="../js/processing.js"></script>
   </head>
   <body>
-    <h1>Tic Tac Total Defeat</h1>
-    <h4>by Jordan Arnesen</h4>
-    <p>You're <span style="color: #FF0000">X</span>. Think you can beat the AI player <span style="color: #0000FF">O</span>?
-      <ul>
-        <li style="padding: 5px">
-          When it's <span style="color: #FF0000">X</span>'s turn, make a move by typing the letter of the cell you want to claim.<br>(Be sure to click inside the gray game window first.)
-        </li>
-        <li style="padding: 5px">
-          If you want to see the AI play against itself, press <strong>'A'</strong> whenever it's <span style="color: #FF0000">X</span>'s turn.
-        </li>
-        <li style="padding: 5px">
-          If you want to end a game early, press <strong>'Q'</strong> to quit.
-        </li>
-      </ul>
-    </p>
+    <div class="container row" style="margin: 20px">
+      
+      <div class="col-md-5">
+        <h1>Tic Tac Total Defeat</h1>
+        <h4 style="padding-bottom: 30px">by Jordan Arnesen</h4>
+        <p>You're <span style="color: #FF0000">X</span>. Think you can beat the AI player <span style="color: #0000FF">O</span>?
+          <ul style="padding-bottom: 30px">
+            <li style="padding: 5px">
+              When it's <span style="color: #FF0000">X</span>'s turn, make a move by typing the letter of the cell you want to claim.<br>(Be sure to click inside the gray game window first.)
+            </li>
+            <li style="padding: 5px">
+              If you want to see the AI play against itself, press <strong>'A'</strong> whenever it's <span style="color: #FF0000">X</span>'s turn.
+            </li>
+            <li style="padding: 5px">
+              If you want to end a game early, press <strong>'Q'</strong> to quit.
+            </li>
+          </ul>
+        </p>
+        <p>
+          AI logic uses the MiniMax algorithm - big thanks to Jason Fox's great <a href="http://neverstopbuilding.com/minimax" target="_blank">blog post</a> on the subject. Written in <a href="http://processing.org" target="_blank">Processing</a>, using <a href="http://processingjs.org" target="_blank">Processing.js</a> for online embedding.
+        </p>
+        <p>
+          You can check out the game source code <a href="https://github.com/extrajordanary/byjorWebsite/blob/master/play/Tic_Tac_Total_Defeat.pde" target="_blank">on Github</a>.
+        </p>
+      </div>
+      
+      <div class="col-md-6">
+        <canvas data-processing-sources="Tic_Tac_Total_Defeat.pde"></canvas>
+      </div>
 
-    <canvas data-processing-sources="Tic_Tac_Total_Defeat.pde"></canvas>
-
+    </div>
   </body>
 </html>
