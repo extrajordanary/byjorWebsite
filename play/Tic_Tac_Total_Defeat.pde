@@ -5,9 +5,6 @@
  */
 
 // VARIABLES
-boolean debug = false;
-boolean debugGameState = false;
-
 boolean autoEndTurn = true;
 boolean playAgainstAI = true;
 
@@ -114,7 +111,7 @@ void showGameStatus() {
     }
     if (!isTurnTaken) {
       text(currentPlayerString+"'s turn", 20, 15);
-    } else { // not used when using automatic end turn
+    } else { // shown when not using automatic end turn
       text("Press Spacebar to change players.", 20, 15);
     }
   }
@@ -141,7 +138,6 @@ void keyPressed() {
       takeTurnAI();
     } else {
       int cell = cellLetters.indexOf(key); 
-      if (debug) println("Human chooses cell "+cell);
 
       // -1 if key pressed was not in cellLetters
       if (cell > -1) {
@@ -171,7 +167,6 @@ void setupGame() {
 // GAME LOGIC
 //______________________________________________________
 boolean placeMarkInCell(int cell) {
-  if (debug) println("Placing...");
   if (cell > -1 && cell < 9) { 
     // check for valid cell number
     if (gameState[cell] == 0) { 
@@ -182,9 +177,6 @@ boolean placeMarkInCell(int cell) {
     }
   }
 
-  if (debugGameState) {
-    // printArray(gameState);
-  }
   return isTurnTaken;
 }
 
@@ -239,9 +231,7 @@ boolean madeWinningMove(int[] theGameState, int player) {
 //______________________________________________________
 void takeTurnAI() {
   if (!isTurnTaken) {
-    int cell = chooseBestCell(gameState, currentPlayer);
-    if (debug) println("AI chooses cell "+cell);
-  
+    int cell = chooseBestCell(gameState, currentPlayer);  
     boolean success = placeMarkInCell(cell);
   
     if (success) {
@@ -256,15 +246,16 @@ void takeTurnAI() {
 int chooseBestCell(int[] theGameState, int player) {
   // returns index of best cell's position in gameState array
   int bestCell;
+
   // see which cells are still available
   ArrayList<Integer> openCells = getOpenCells(theGameState);
   if (openCells.size() > 8) {
     // choose randomly if making very first move
-     return int(random(9));
+    return int(random(9));
   }
+
   // get best outcomes for each available cell
   ArrayList<Integer> bestOutcomes = getBestOutcomesArray(theGameState, player, 0);
-  if (debug) printArray(bestOutcomes);
   
   // get the best of the outcomes from the ArrayList
   int bestOutcome = bestOutcomeInArray(bestOutcomes, player);
@@ -287,18 +278,13 @@ int getBestOutcome(int[] theGameState, int player, int depth) {
   // see which cells are still available
   ArrayList<Integer> openCells = getOpenCells(theGameState);
   
-  if (openCells.size() < 1) {
-    // no moves to make, so must be a tie
-    if (debug) println("getBestOutcome called on gameState with no open cells");
-    bestOutcome = 0;
-    
-  } else if (openCells.size() == 1) {
+  if (openCells.size() == 1) {
     // if only one option, return value for win or tie
     int testCell = (Integer)openCells.get(0);
     int[] newGameState = getPossibleGameState(theGameState, testCell, player);
 
     if (madeWinningMove(newGameState, player)) {
-      bestOutcome = (10 * player) + (-depth * player);
+      bestOutcome = (10 * player) + (depth * player);
     } else {
       bestOutcome = 0;
     }
@@ -326,16 +312,15 @@ ArrayList getBestOutcomesArray(int[] theGameState, int player, int depth) {
       int best;
       if (madeWinningMove(newGameState, player)) {
         // if win, set outcome value to add to array
-        best = (10 * player) - (-depth * player);
+        best = (10 * player) - (depth * player);
       } else {
         // recursive call, passed to next player
         int nextPlayer = player * -1;
-        best = getBestOutcome(newGameState, nextPlayer, depth - 1);
+        best = getBestOutcome(newGameState, nextPlayer, depth + 1);
       }
       bestOutcomes.add(best);
     }
-  if (debug) println("Depth: "+depth);
-  if (debug) printArray(bestOutcomes);
+
   return bestOutcomes;
 }
 
@@ -355,14 +340,12 @@ ArrayList getOpenCells(int[] theGameState) {
       openCells.add(i);
     } 
   }
-  if (debug) {
-    println("Open cells: " + openCells.size());
-  }
+
   return openCells;
 }
 
 int[] getPossibleGameState(int[] theGameState, int cell, int player) {
- // returns newGameState for player claiming cell
+ // returns new GameState for player claiming cell
   int[] possGameState = new int[9];
   arrayCopy(theGameState, possGameState);
   possGameState[cell] = player;
@@ -371,6 +354,7 @@ int[] getPossibleGameState(int[] theGameState, int cell, int player) {
 }
 
 int minimumValue(ArrayList<Integer> array) {
+  // return the minimum value, not the index
   int min = (Integer)array.get(0);
   for (int i = 1; i < array.size(); i ++) {
     int currentValue = (Integer)array.get(i);
@@ -382,6 +366,7 @@ int minimumValue(ArrayList<Integer> array) {
 }
 
 int maximumValue(ArrayList<Integer> array) {
+  // return the maximum value, not the index
   int max = (Integer)array.get(0);
   for (int i = 1; i < array.size(); i ++) {
     int currentValue = (Integer)array.get(i);
