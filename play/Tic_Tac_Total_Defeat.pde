@@ -9,7 +9,7 @@ boolean autoEndTurn = true;
 boolean playAgainstAI = true;
 
 boolean isGameSetup;
-float boardInset = 80;
+float boardInset = 40;
 float cellSize;
 String cellLetters = "rtyfghvbn";
 
@@ -29,7 +29,7 @@ int turnStart;
 // MAIN FUNCTIONS
 //______________________________________________________
 void setup() {
-  size(500, 500, OPENGL);
+  size(400, 400, OPENGL);
 
   cellSize = (height - (2 * boardInset)) / 3;
   isGameSetup = false;
@@ -71,7 +71,7 @@ void drawBoard() {
       //draw letter or player mark
       if (gameState[i] == 0) { 
         // cell not yet taken - show which key to claim it
-        fill(0);
+        fill(150);
         textSize(20);
         textAlign(LEFT, TOP);
         text(cellLetters.substring(i, i+1).toUpperCase(), xPos + 15, yPos + 5);
@@ -81,10 +81,10 @@ void drawBoard() {
         textAlign(CENTER, CENTER);
         if  (gameState[i] > 0) { // player X
           fill(255, 0, 0);
-          text("X", xPos + cellSize/2, yPos + cellSize/2);
+          text("X", xPos + cellSize/2 + 10, yPos + cellSize/2 - 10);
         } else { // player O
           fill(0, 0, 255);
-          text("O", xPos + cellSize/2, yPos + cellSize/2);
+          text("O", xPos + cellSize/2 + 10, yPos + cellSize/2 - 10);
         }
       }
       i++;
@@ -99,7 +99,7 @@ void showGameStatus() {
   if (isGameOver) {
     // show who won and game reset instructions
     fill(0);
-    text(theWinner+ " wins! To play again, press P.", 20, 15);
+    text(theWinner+ " wins! To play again, press P.", boardInset/2, 0);
   } else {
     // show whose turn it is
     if (currentPlayer > 0) {
@@ -110,9 +110,9 @@ void showGameStatus() {
       currentPlayerString = "O";
     }
     if (!isTurnTaken) {
-      text(currentPlayerString+"'s turn", 20, 15);
+      text(currentPlayerString+"'s turn", boardInset/2, 0);
     } else { // shown when not using automatic end turn
-      text("Press Spacebar to change players.", 20, 15);
+      text("Press Spacebar to change players.", boardInset/2, 0);
     }
   }
 }
