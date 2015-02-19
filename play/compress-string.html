@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf8">
+    <title>Tic Tac Total Defeat - Jordan Arnesen</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/styles2.css" />
+    <link rel="icon" type="image/png" href="../favicon.ico">
+    <script src="../js/processing.js"></script>
+  </head>
+  <body>
+    <div class="container" style="margin: 20px">
+
+      <h1>Sentence Compression Exercise</h1>
+      <h4 style="padding-bottom: 30px">by Jordan Arnesen</h4>
+
+      <div class="row play-panel">
+          <div class="col-md-4">
+
+            <p style="font-size: 1.2em">Have you ever thought to yourself:<br>
+            <strong>"Geez, words sure are way longer than they need to be..."</strong>
+            </p>
+            <p style="font-size: 1.2em">
+            Then you're in luck!
+              <ol style="padding-bottom: 30px; font-size: 1.2em">
+                <li style="padding: 5px">
+                  Click inside the canvas window (the big dark rectangle, see it?)
+                </li>
+                <li style="padding: 5px">
+                  Press enter to clear the old sentence
+                </li>
+                <li style="padding: 5px">
+                  Type your own words/sentence/whatever
+                </li>
+                <li style="padding: 5px">
+                  Witness the live compression magic!
+                </li>
+                <li style="padding: 5px">
+                  Return to Step 2 and repeat
+                </li>
+              </ol>
+            </p>
+            <p style="font-size: 1.2em">
+              Written in <a href="http://processing.org" target="_blank">Processing</a>, using <a href="http://processingjs.org" target="_blank">Processing.js</a> for online embedding.
+            </p>
+            <p style="font-size: 1.2em">
+              Check out the source code <a href="https://github.com/extrajordanary/byjorWebsite/blob/master/play/compress-string.html" target="_blank">on Github</a> and see my full portfolio of projects <a href="http://byjor.com" target="_blank">here</a>.
+            </p>
+          </div>
+          
+        <div class="col-md-8">
+          <script type="text/processing">
+
+            char letter;
+            String original = "Hit enter to clear and start a new sentence.";
+            String compressed = "";
+
+            void setup() {
+              size(550, 360);
+            }
+
+            void draw() {        
+              background(80);
+
+              textSize(14);
+              text("Click inside this window and type to enter the sentence that you want to compress.", 25, 25);
+              text("Press ENTER to clear and start over. (BACKSPACE does not work.)", 25, 45);
+
+              textSize(20);
+              text("Original Sentence:", 50, 100);
+              text(original, 70, 130);
+              
+              text("Compressed Sentence:", 50, 250);
+              text(compressed, 70, 280);
+            }
+
+            void keyPressed() {
+              // The variable "key" always contains the value of the most recent key pressed.
+              if (key == ENTER || key == RETURN) {
+                original = "";
+                compressed = "";
+              }
+              else if (key == BACKSPACE || key == DELETE || key == TAB || key == ESC) {
+                // do nothing
+              }
+              else if (key >= 32 && key <= 126) {
+                letter = new String(key);
+                original = original + letter;
+                updateCompressed();
+              }
+            }
+
+            void updateCompressed() {
+              // clear string
+              compressed = "";
+
+              int[] originalKeys = int(original.toCharArray());
+              String currentWord;
+              int currentKey; 
+              int currentCount = 0;
+
+              for (int i = 0; i < original.length(); i ++) {
+                currentKey = originalKeys[i];
+
+                if ((currentKey >= 65 && currentKey <= 90) || (currentKey >= 97 && currentKey <= 122)) {
+                  // alpha
+                  if (currentCount == 0) {
+                    // start of a letter stretch
+                    value = original.charAt(i);
+                    compressed = compressed + value;
+                  } 
+                  currentCount ++;
+                } else {
+                  // non-alpha
+                  value = original.charAt(i);
+
+                  if (currentCount > 2) {
+                    // end prev letter stretch
+                    lettersCompressed = currentCount - 2;
+                    prevValue = original.charAt(i-1);
+                    compressed = compressed + lettersCompressed + prevValue + value;
+                    // set count back to 0
+                  } else if (currentCount > 1) {
+                    prevValue = original.charAt(i-1);
+                    compressed = compressed + prevValue + value;
+                  } else {
+                    compressed = compressed + value;
+                  }
+                  currentCount = 0;
+                }
+              }
+            }
+          </script>
+
+          <canvas></canvas>
+        </div>
+      </div> <!-- play-panel -->
+
+    </div> <!-- container -->
+
+  </body>
+</html>
